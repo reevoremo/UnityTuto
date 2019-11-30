@@ -18,8 +18,8 @@ public class Translate : MonoBehaviour
 
         Vector3 movement = new Vector3();
 
-        movement.x = Input.GetAxis("Horizontal") * speed;
-        movement.x *= Time.deltaTime;
+        movement.z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        movement.z *= Time.deltaTime;
 
         t.Translate(movement);
     }

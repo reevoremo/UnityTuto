@@ -15,7 +15,7 @@ public class WaitAndDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > initialTime + destroyTime)
+        if (Time.time >= initialTime + destroyTime)
         {
             Destroy(gameObject);
         }

@@ -16,6 +16,6 @@ public class Rotate : MonoBehaviour
     void Update()
     {
         Transform t = GetComponent<Transform>();
-        t.Rotate(Vector3.left * speed * Time.deltaTime);
+        t.Rotate(Vector3.up * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
     }
 }

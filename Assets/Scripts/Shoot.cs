@@ -12,7 +12,7 @@ public class Shoot : MonoBehaviour
         if (Input.GetKey(firebutton))
         {
             Debug.Log("Hey SHoot");
-            Instantiate(bullet, GetComponent<Transform>().position, Quaternion.identity); ;
+            Instantiate(bullet, GetComponent<Transform>().position, GetComponent<Transform>().rotation);
         }
         
     }
